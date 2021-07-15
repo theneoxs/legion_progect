@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="512.0" style="-fx-background-color: F8ECD3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ContrForAuth">
+   <children>
+      <ImageView fitHeight="512.0" fitWidth="611.0" layoutX="-93.0" opacity="0.4">
+         <image>
+            <Image url="@rue4348916a53.jpg" />
+         </image>
+      </ImageView>
+      <Polygon fill="#a43835" layoutX="235.0" layoutY="162.0" points="-200.0, 308.0, -125.0, 308.0, -125.0, 297.0, -185.0, 297.0, -185.0, -108.0, -125.0, -108.0, -125.0, -119.0, -200.0, -119.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="30.0">
+         <effect>
+            <DropShadow offsetY="2.0" />
+         </effect>
+      </Polygon>
+      <Polygon fill="#a43835" layoutX="606.0" layoutY="162.0" points="-200.0, 308.0, -125.0, 308.0, -125.0, 297.0, -185.0, 297.0, -185.0, -108.0, -125.0, -108.0, -125.0, -119.0, -200.0, -119.0" rotate="180.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.rightAnchor="30.0">
+         <effect>
+            <DropShadow offsetY="-2.0" />
+         </effect>
+      </Polygon>
+      <Text fx:id="text" layoutX="116.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Клуб единоборств" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="200.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LEGION" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="137.0" fitWidth="138.0" layoutX="187.0" layoutY="156.0">
+         <image>
+            <Image url="@5rIK-90pmCE.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfLogin" layoutX="155.0" layoutY="293.0" prefHeight="25.0" prefWidth="202.0" promptText="Login">
+         <effect>
+            <DropShadow height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+      </TextField>
+      <Button fx:id="bEnter" layoutX="200.0" layoutY="390.0" mnemonicParsing="false" onAction="#enter" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: E8CB91;" text="Вход">
+         <effect>
+            <DropShadow height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+      </Button>
+      <PasswordField fx:id="tfPassword" layoutX="155.0" layoutY="342.0" prefHeight="25.0" prefWidth="202.0" promptText="Password">
+         <effect>
+            <DropShadow height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+      </PasswordField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="512.0" style="-fx-background-color: F8ECD3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ContrForCompAdd">
+   <children>
+      <Button fx:id="bEditComp" layoutX="200.0" layoutY="263.0" mnemonicParsing="false" onAction="#enterComp" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: E8CB91;" text="Ввод">
+         <effect>
+            <DropShadow height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+      </Button>
+      <Text layoutX="70.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить соревнование" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Text>
+      <Label layoutX="68.0" layoutY="139.0" text="Название">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="179.0" text="Дата">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="218.0" text="Награда">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfName" layoutX="238.0" layoutY="139.0" prefHeight="25.0" prefWidth="189.0" />
+      <TextField fx:id="tfData" layoutX="238.0" layoutY="180.0" prefHeight="25.0" prefWidth="189.0" />
+      <Text layoutX="77.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить победителей" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Text>
+      <Label layoutX="68.0" layoutY="350.0" text="Соревнование">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="391.0" text="Победитель">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfComp" layoutX="234.0" layoutY="351.0" prefHeight="25.0" prefWidth="189.0" />
+      <TextField fx:id="tfWinner" layoutX="234.0" layoutY="392.0" prefHeight="25.0" prefWidth="189.0" />
+      <Button fx:id="bWinner" layoutX="200.0" layoutY="444.0" mnemonicParsing="false" onAction="#enterWinner" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: E8CB91;" text="Ввод">
+         <effect>
+            <DropShadow height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+      </Button>
+      <ComboBox fx:id="cbReward" layoutX="237.0" layoutY="220.0" prefHeight="25.0" prefWidth="189.0" />
+   </children>
+</AnchorPane>
